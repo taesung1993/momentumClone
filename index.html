@@ -3,9 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Momentum Clone</title>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <script src="src/index.js"></script>
+    <div class="container">
+      <h1 id="jsClock">00:00:00</h1>
+      <form id="jsNameForm">
+        <input type="text" placeholder="what is your name?" />
+      </form>
+      <h4 class="greeting hidden"></h4>
+      <form id="jsTodo" class="todo-form hidden">
+        <input type="text" id="todoInput" placeholder="Write a to do" />
+      </form>
+      <ul class="todo-list hidden"></ul>
+    </div>
+    <span id="jsWeather"></span>
+    <script src="src/clock.js"></script>
+    <script src="src/savename.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/bg.js"></script>
+    <script src="src/weather.js"></script>
   </body>
 </html>
